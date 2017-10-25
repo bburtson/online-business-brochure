@@ -1,0 +1,88 @@
+@import '../../styles/colors/palette.less';
+@import '../../styles/mixins/positions.less';
+
+#nav-container {
+    position:   fixed;
+    z-index:    1000;
+    overflow:   hidden;
+    height:     @navHeight;
+    box-shadow: 1px 2px 9px 2px grey;
+    width:      100%;
+    transition: all ease 0.23s;
+    right:      0;
+
+}
+
+#nav-container.idle-collapsed {
+    margin:10px;
+    transition: all ease 0.29s;
+    width: 69px;
+    background: fade(@crimson, 80%);
+}
+
+#nav-container.menu-open {
+    transition: all ease 0.25s;
+    margin:0;
+    width:100%;
+    height:100%;
+    background: fade(@crimson, 100%);
+}
+
+#nav-container.idle-collapsed .content-heading { display:none; }
+#nav-container.idle-collapsed.menu-open .content-heading { display: inline; }
+#menu-content {
+    display: none;
+    padding: 17px;
+    font-size:38px;
+    font-family:    "BenchNine";
+    line-height:    1;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding-top:0;
+}
+
+#menu-content div { 
+    padding:8px;
+    cursor: pointer;
+}
+
+#nav-container.menu-open #menu-content { display: block;}
+#menu-button { padding:16.5px; float: right; cursor: pointer; }
+.content-heading {
+    font-family:    "BenchNine";
+    line-height:    1;
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    font-size:      5.4em;  
+    padding-left: 15px;
+}
+
+.accent-letter-right {
+    display:   inline-flex;
+    transform: translate(-3px, -13px) rotate(40deg);
+    color:     @babyBlue;
+    font-size: 78%;
+    letter-spacing: -18px;    
+    text-shadow: 4px 4px 6px fade(darken(@babyBlue, 49%), 90%);
+}
+
+.accent-letter-left {
+    display:    inline-flex;
+    transform:  rotate(-14deg);
+    color:      @babyBlue;    
+}
+
+#address-info {
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    bottom:0;
+}
+
+div#address-info.row { padding:0; }
+#address-info span { padding: 0.8px; }
+
+a {
+    text-decoration: none;
+    color: @babyBlue;
+}

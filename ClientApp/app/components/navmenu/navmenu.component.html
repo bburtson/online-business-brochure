@@ -1,0 +1,33 @@
+<div #navBar id="nav-container" class="bg crimson">
+    <span class="content-heading fg tan">
+        P<span class="accent-letter-right"><i class="fa fa-paw"></i></span>W &nbsp; P<span class="fg baby-blue">A</span>LS
+    </span>
+    <div (click)="toggleMenu()" id="menu-button">
+        <i #menuIcon class="fa fa-bars fa-3x fg baby-blue"></i>
+    </div>
+    <div style="padding:0;" class="col-xs-12"> <hr /> </div>
+    <div id="menu-content" class="col-xs-12">
+        <div style="padding-top:0;" class="row">
+            <div style="padding-top:0;" class="row">
+                <div #navLink *ngFor="let option of menuOptions; let i = index"
+                     routerLink="{{option.path}}"
+                     [class]="stripeSelections(i)"
+                     routerLinkActive="active-route"
+                     (click)='toggleMenu()'>
+                    <span class="fg baby-blue">&nbsp;{{option.title}}</span>
+                </div>
+            </div>
+        </div>
+        <div style="padding:0; font-size:30px;" class="row text-center fg baby-blue">
+            <hr />
+            <a target="_blank" href="https://www.facebook.com/Paw-Pals-Pet-Grooming-723850094492110"><i class="fa fa-facebook-square"></i> &nbsp; Share & like.</a>
+            <br /> &nbsp;
+        </div>
+        <div id="address-info" class="row bg light-crimson text-center">
+            <div style="padding:0;" class="col-xs-12">
+                <span class="fg tan"> 6938 N Oak Trafficway, <br /> Gladstone, MO 64118  </span> <br />
+                <span class="fg tan"> (816) 734-2100</span> <br />
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+@import '../../styles/colors/palette.less';
+@import '../../styles/mixins/positions.less';
+// @import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+@media (max-width: 767px) { .body-content { padding-top: 50px; } }
+body {
+    background-color: @white; 
+    font-family:      "Arial Narrow",Arial,sans-serif;
+    color:           white;
+}
+.media-button {
+    padding:10px;
+    margin: 10px;
+    font-family:     "BenchNine";
+    text-transform:  uppercase;
+    letter-spacing:  2px;
+    line-height:     3px;
+    font-size:       2.3em;
+    z-index: 100;
+    outline: none;
+}
+
+.media-button-sm {
+    .media-button;
+    font-size: 30px;
+    line-height: .5;
+    outline:none;
+    border:none;
+
+}
+.btn:active {
+    outline:none;
+}
+
+.media-text {
+    position: relative;
+    padding-top: 100px; 
+}
+.media-text .heading {
+    font-family: 'open sans',arial,sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 5px 4px #1C1C1C;
+}
+.media-text span.bold {
+    font-weight: 600;
+    text-shadow: 2px 5px 4px #1C1C1C;
+}
+@media screen and (max-width: 768px) {
+    .media-text .heading {
+        font-size: 35px;
+    }
+}

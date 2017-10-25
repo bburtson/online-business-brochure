@@ -1,0 +1,52 @@
+@import '../../styles/colors/palette.less';
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+    top: 0;
+    padding: 2px;
+    width: auto;
+    height: auto;
+    margin: 0;
+    border-radius: 100%;
+    border: 0;
+    /*background: @babyBlue;*/
+    text-indent: 0;
+    color: @babyBlue;
+    text-shadow: 3px 4px 3px fade(darken(@babyBlue, 48%), 90%);
+    transition: transform ease .30s;
+}
+
+.carousel-indicators {
+    margin-left:0;
+    bottom: unset;
+    padding:0;
+    width:100%;
+    left :0;
+}
+
+ol.carousel-indicators li.active {
+    background: transparent;
+    color: @magenta;
+    transform: scale(1.2) rotate(30deg);
+}
+
+a.carousel-control { opacity: 1; color: @tan; }
+
+#caro-container {
+    position: relative;
+    width: 100%;
+    height: 65px;
+    padding-top: 10px;
+    background: @tan;
+    font-size:15px;
+    bottom: 0;
+    top: unset;
+    letter-spacing:6px;
+    text-align:center;
+}
+
+#caro-container .ol {
+    width: 100%;
+    margin: 0;
+    left: 0;    
+}

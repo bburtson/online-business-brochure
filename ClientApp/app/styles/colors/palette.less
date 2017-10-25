@@ -1,0 +1,27 @@
+@tan:          #FFFBD8;
+@crimson:      #5D3148;
+@lightCrimson: #684557;
+@magenta:      #D51079;
+@babyBlue:     #48D7E8;
+@darkBlue:     #016B79;
+@white:        white;  
+
+.bgfg(@c) { &.bg { background-color: @c; } &.fg{ color: @c; } }
+.lighten(@c) { &.bg{ background-color: lighten(@c, 7%); } &.fg { color: lighten(@c, 7%); } }
+.tan           { .bgfg(@tan);          }
+.crimson       { .bgfg(@crimson);      }
+.light-crimson { .bgfg(@lightCrimson); }
+.magenta       { .bgfg(@magenta);      }
+.baby-blue     { .bgfg(@babyBlue);     }
+.dark-blue     { .bgfg(@darkBlue);     }
+.white         { .bgfg(@white);        }
+
+.tan.lighten       { .lighten(@tan);          }
+.crimson.lighten   { .lighten(@crimson);      }
+.magenta.lighten   { .lighten(@magenta);      }
+.baby-blue.lighten { .lighten(@babyBlue);     }
+.dark-blue.lighten { .lighten(@darkBlue);     }
+
+div.crimson.active-route { border:solid @tan; }
+div.crimson.lighten.active-route { border:solid @tan; }
+div.crimson.active-route span { color: @tan;  }

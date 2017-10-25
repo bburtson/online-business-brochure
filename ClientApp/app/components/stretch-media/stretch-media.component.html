@@ -1,0 +1,16 @@
+<!-- BigVidComponent-->
+<div id="bg-container">
+  <video id="bg-video" [poster]="vidFallback" loop muted #videoPlayer>
+    <source type="video/mp4">
+  </video>
+  <img id="bg-image" [src]="imgSrc" class="hidden-sm hidden-md hidden-lg" #mobileImage />
+</div>
+<div id="stretch-content">
+  <ng-content></ng-content>
+</div>
+<div id="tri-container">
+  <div class="row">
+    <div id="tri"></div>
+  </div>
+</div>
+<div id="divider"></div>

@@ -1,0 +1,32 @@
+[
+  {
+    "outputFileName": "ClientApp/app/components/navmenu/navmenu.component.min.html",
+    "inputFiles": [
+      "ClientApp/app/components/navmenu/navmenu.component.html"
+    ]
+  },
+  {
+    "outputFileName": "ClientApp/app/components/gallery/gallery.component.min.html",
+    "inputFiles": [
+      "ClientApp/app/components/gallery/gallery.component.html"
+    ]
+  },
+  {
+    "outputFileName": "ClientApp/app/components/photo-viewer/photo-viewer.component.min.html",
+    "inputFiles": [
+      "ClientApp/app/components/photo-viewer/photo-viewer.component.html"
+    ]
+  },
+  {
+    "outputFileName": "ClientApp/app/components/home/home.component.min.html",
+    "inputFiles": [
+      "ClientApp/app/components/home/home.component.html"
+    ]
+  },
+  {
+    "outputFileName": "ClientApp/app/components/icon-section/icon-section.component.min.html",
+    "inputFiles": [
+      "ClientApp/app/components/icon-section/icon-section.component.html"
+    ]
+  }
+]
